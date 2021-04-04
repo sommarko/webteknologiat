@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <head><h1>HTML Taulukko</h1>  </head>
+
+
+<form action="/action_page.php">
+    <table>
+       <tr>
+         <td>
+             <fieldset>
+             <legend>Contact information:</legend>
+                 <table>
+                 <tr>
+                        <td> <label for="fname">First name:</label> </td>    
+                        <td>  <input type="text" id="fname" name="fname" value=""> </td> 
+                        <td colspan="2"><label>Preferred contact method:</label></td>
+                </tr>
+            <tr>
+                     <td> <label for="lname">Last name:</label> </td>
+                     <td> <input type="text" id="lname" name="lname" value=""><br> </td>
+                    <td> <input type="checkbox" id="selectmail" value="selectmail"></td>
+                     <td> <label for="selectmail">Email</label></td>
+             </tr>
+                <tr>
+                        <td> <label for="email">Email:</label> </td>
+                        <td>  <input type="text" id="email" name="email" value=""><br> </td>
+                        <td>   <input type="checkbox" id="selectphone" value="selectphone"></td>
+                        <td> <label for="phone">Telephone</label></td>
+            
+                </tr> 
+                <tr>
+                    <td><label for="phonenumber">Telephone:</label></td>
+                    <td><input type="tel" id="phonenumber" name="phonenumber" value=""  >  </td>
+                </tr>  
+
+                 </table>
+    </td>
+        </fieldset>
+        
+          
+
+          
+ </tr>
+ <td>
+     <fieldset>
+         <legend>Feedback:</legend>
+         <table>
+             <td> <label for="message">Message Subject:</label></td>
+            <td><input type="text" id="message" name="message"></td>
+            
+           
+         </table>
+         <table>
+            <td><textarea name="message" rows="15" cols="60"></textarea></td>
+         </table>
+         <table>
+            <label for="myfile">Attach a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit" value="Send">
+         </table>
+         
+         
+     </fieldset>
+ </td>
+    </table> 
+
+
+    
+  </form> 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
