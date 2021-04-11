@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+     <title>CSS Grid</title>
+     <style>
+         .block {
+             display: grid;
+             grid-template-columns: 70% 30%;
+             /* grid-column-gap: 1em;
+             grid-row-end: 1em; */
+             grid-gap: 1em;
+         }
+         
+         .block > div{
+             background: #eee;
+             padding:  1em;
+         }
+         .block > div:nth-child(odd){
+         background:#ddd;
+         }
+
+     </style>
+
+    
+</head>
+<body>
+    <div class="block"> 
+        <div> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati voluptatum aliquid magni officiis fugit repudiandae mollitia sit recusandae consequuntur? A praesentium ipsam vero quisquam quo ipsa velit id cum?
+        </div>
+
+        <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime soluta sint repellendus eum debitis praesentium dolor in nesciunt libero ut eos nostrum deserunt cum et, laboriosam molestiae temporibus. Optio!
+        </div>
+            
+            <div>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non autem placeat impedit? Tempora quaerat alias consequuntur, nisi, temporibus non veritatis, atque nesciunt corrupti nulla nihil minus perspiciatis voluptatibus quo.
+            </div>
+    </div>
+   
+
+
+</body>
+</html>

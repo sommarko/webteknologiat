@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body 
+{
+    background-color: rgba(18, 157, 250, 0.651);
+    
+    font-family: Poppins;
+    padding: 50px;
+    margin: 100px;
+}
+fieldset
+{
+    color:rgb(0, 0, 0);
+    font-size: larger;
+    background-color: gray;
+    font-weight: bold;
+   
+}
+textarea
+{
+        background-color: white;
+}
