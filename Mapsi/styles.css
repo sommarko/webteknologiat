@@ -1,0 +1,19 @@
+.hakukenttä{
+    text-align: center;
+}
+iframe{
+    width: 550px;
+    height: 550px;
+    border: 1px solid black;
+    margin:0 auto;
+    display: block;
+  
+    
+}
+h1{
+    text-align: center;
+
+}
+p{
+    text-align: center;
+}
