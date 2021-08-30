@@ -33,9 +33,16 @@ value= value+1;*/
 
 function incrementButton()
 {
+   
     var value = parseInt(document.getElementById('n1').value, 10);
+    if (document.getElementById('n1').value < 10)
+
+    {     value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('n1').value = value;
+    }
     value = isNaN(value) ? 0 : value;
-    value++;
+    
     document.getElementById('n1').value = value;
 
 
@@ -46,12 +53,17 @@ document.getElementById('n1').innerHTML = value;
 }
 {
 function incrementButton2()
-{
+{   
     var value = parseInt(document.getElementById('n2').value, 10);
+    if (document.getElementById('n2').value < 10)
+    
+    {
     value = isNaN(value) ? 0 : value;
     value++;
     document.getElementById('n2').value = value;
-    
+    }
+    value = isNaN(value) ? 0 : value;
+    document.getElementById('n2').value = value;
 
 console.log(value)
 document.getElementById('n2').innerHTML = value;
@@ -60,9 +72,14 @@ document.getElementById('n2').innerHTML = value;
 }}
 function reduceNumber(){
     var value = parseInt(document.getElementById('n1').value, 10);
+    if( document.getElementById('n1').value >=1)
+    {
     value = isNaN(value) ? 0 : value;
     value--;
     document.getElementById('n1').value = value;
+}
+value = isNaN(value) ? 0 : value;
+document.getElementById('n1').value = value;
 
 
 console.log(value)
@@ -70,19 +87,21 @@ document.getElementById('n1').innerHTML = value;
 }
 function reduceNumber2(){
     var value = parseInt(document.getElementById('n2').value, 10);
+    if( document.getElementById('n2').value >=1)
+    {
     value = isNaN(value) ? 0 : value;
     value--;
     document.getElementById('n2').value = value;
-
-
+}
+value = isNaN(value) ? 0 : value;
+document.getElementById('n2').value = value;
 console.log(value)
 document.getElementById('n2').innerHTML = value;
 }
-function getRandomInt(min, max) {
-    min = Math.ceil(1);
-    max = Math.floor(10);
-    return number = Math.floor(Math.random() * (max - min) + min);
-     //Vaikeuksia tämän kanssa saada kentään.
+function getRandom() {
+    
+    document.getElementsByClassName("number").innerHTML = Math.floor(Math.random() * 10) + 1;
+    
    
      
 

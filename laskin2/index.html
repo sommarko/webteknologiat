@@ -20,7 +20,7 @@
                 <td>
                     <button class="button" onclick="reduceNumber()" >-</button>
                     </td>
-                <td><input type="text" onload="getRandomInt(1, 10)" id="n1" ></td>
+                <td><input class="number" type="text" onload="getRandom()" id="n1" min="1" max="10" ></td>
                 <td><button class="button" onclick="incrementButton()" value="Increment Value">+</button></td>
                 <td><div>
                     <select id="operators">
@@ -30,8 +30,8 @@
                         <option value="/">/</option>
                     </select>
                 </div></td>   
-                <td><button class="button" onclick="reduceNumber2()" >-</button></td>
-                <td><input type="text" id="n2" ></td>
+                <td><button class= "button" onclick="reduceNumber2()" >-</button></td>
+                <td><input class= "number"type="text" id="n2" min="1" max="10" ></td>
                 <td><button  class="button" onclick="incrementButton2()" value="Increment Value">+</button></td><br>
             </tr>
         </table>
