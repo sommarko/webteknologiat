@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="styles.css">
+    <link src="https://www.google.com/maps?q=' + address + city + '&output=embed">
+    <script src="map.js"></script>
+</head>
+
+<body>
+    
+    <div>
+        <h1>Google Maps harjoitus</h1>
+
+        <iframe id="myFrame" title="Inline Frame Example" width="150" height="200"
+
+            src="https://www.google.com/maps?q=yliopistonkatu36+lappeenranta+&output=embed">
+        </iframe>
+
+    </div>
+
+
+
+    <div class="address">
+        <div>
+            <label for="site-search">Katuosoite:<input type="search" id="street" name="q"
+                    aria-label="Search through site content"></label>
+            <div>
+                <label for="site-search">Kaupunki:<input type="search" id="town" name="q"
+                        aria-label="Search through site content"><button onclick="search()">Search</button></label>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

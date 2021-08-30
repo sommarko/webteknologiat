@@ -1,10 +1,8 @@
 function search(){
    
-    var x = document.getElementById("address").value;
-    var y = document.getElementById("city").value;
+    var x = document.getElementById("town").value;
+    var y = document.getElementById("street").value;
     var a = x+y;
-    console.log(x.value);
-    console.log(y.value);
 
     var mylink = `https://www.google.com/maps?q=${a}&output=embed`;
 

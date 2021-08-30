@@ -16,7 +16,7 @@
      background: linear-gradient(-45deg, #202020,#474445, #b98f8f,#f81313);
      background-size: 400% 400%; 
      position: absolute;
-     animation: change 15s ease-in-out infinite;
+     animation: change 30s ease-in-out infinite;
     }   
 .maintext{
     width: 300px;

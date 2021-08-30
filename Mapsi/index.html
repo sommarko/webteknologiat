@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <title>Google Maps</title>
     <link scr="https://www.google.com/maps?q=' + address + city + '&output=embed">
     <link rel="stylesheet" href="styles.css">
     <script src="java.js"></script>
+    
 </head>
 <body>
     <h1>Google maps harjoitus</h1>
@@ -12,7 +14,8 @@
 
 
      <div>
-                 <iframe id="myFrame" src="https://www.google.com/maps?q=' + Yliopistonkatu 36 + Lappeenranta + '&output=embed">
+                 <iframe id="myFrame" 
+                 src="https://www.google.com/maps?q=' + Yliopistonkatu 36 + Lappeenranta + '&output=embed">
                 </iframe>
     </div>
     
@@ -20,18 +23,19 @@
 
 
      <div class="hakukenttä">
-        <div class="address">
+        <div>
                 <label for="site-search"> Katuosoite:<input type="search" id="address" name="q"
                 aria-label="Search through site content"></label>
         </div>
+        
        
-        <div class="city">
+        <div>
             <label for="site-search"> Kaupunki:<input type="search" id="city" name="q"
-            aria-label="Search through site content"><button onclick="search()">Hae</button></label>
+            aria-label="Search through site content"></label>
+            <button onclick="search()">Click me</button>
         </div> 
      </div>
-     
-
+     </div>
 
 </body>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="map.js"></script>
+    </head>
+
+
+
+
+    <body>
+        <h1>Map</h1>
+
+        <div id="myFrame" title="Inline frame example" width="150" height="200"
+        src="https://www.google.com/maps?q=' + Yliopistonkatu 36 + Lappeenranta + '&output=embed">
+
+        </div>
+
+
+        <div class="address">
+        <div>
+            <label for="site-search">Katuosoite: <input type="search" id="street" name="q"
+            aria-label="Search through site content"></label>
+            <div>
+                <label for="site-search">Kaupunki: <input type="search" id="town" name="q"
+                aria-label="Search through site content"><button onclick="search()">Search</button></label>
+        </div>
+        </div>
+        </div>
+    </body>
+    
+</html>
