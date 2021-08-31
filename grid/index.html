@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Grid</title>
+            <style>
+
+                .wrapper{
+                    display: grid;
+                    grid-template-columns:1fr 2fr 1fr;
+                    grid-auto-rows: minmax(100px, auto);
+                    grid-gap: 1em;
+                    justify-items: stretch;
+                    align-items: stretch;
+                    font-size: 25px;
+                
+               
+                }
+                .wrapper > div:nth-child(odd) { 
+                    background: rgb(250, 130, 130);
+
+                }
+                .wrapper > div{
+                    background: #eee;
+                    padding: 1em;
+                }
+                .box1{
+                    align-self: start;
+                    border: solid;
+                    background-color: red;
+                }
+                .box2{ align-self: start;
+                    border: solid;
+                }
+                .box3{
+                    border: solid;
+                    
+                }
+                .box4{
+                    border: solid;
+                    /*grid-row: 2/3 ;*/
+                    
+                }
+
+            </style>
+
+        
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="box box1">Grid on 2 dimension tapa järjestää asioita verkkosivulle.</div>
+            <div class="box box2">Esimerkiksi luoda yhdelle riville max 3 gridiä</div>     
+            <div class="box box3">css grid-template-columns: 2fr 2fr 1fr</div>     
+            <div class="box box1">Grid myös osaa  tiivistää tekstin kuinka isoon tilaan vaan. Kokeile muuttamalla kokoa.</div>   
+            <div class="box box2">Kätevä työkalu luoda syvyyttä omiin nettisivuihin.</div>    
+            <div class="box box3">style kohdasta muuttamallla grid-template-columns kohtaa saadaa luootua eri tyyliä.</div>    
+            <div class="box box4">Esimerkiksi grid-template-columns: 1fr 2fr 1fr</div> 
+            <div class="box box4">saadaan luokitettua 3 gridin koot ja missä järjestyksessä.</div>           
+            <div class="box box4">myös grid-row komento antaa muutta paikkaa.</div>
+            <div class="box box4">rowia muuttamalla saadaaan vaikutettuun gridien sisältöjen kohtaa sivulla.</div>
+        </div>
+
+    </body>
+</html>
