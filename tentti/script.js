@@ -21,26 +21,30 @@ btnAdd.addEventListener('click', () =>{
     console.log(input.value);
     
     var options = document.getElementById('option').value;
-    if(options === 'pikavuokraus 2h')
+    if(options === '15')
     {
       document.getElementById('total').value = input*15;
+      total.value = input.value*15;
     }
     
-    if(options === '3päivävuokra 18h')
+    if(options === '30')
     {
-        document.getElementById('total').value = input*30;
+        document.getElementById('total').value = input*20;
+        total.value = input.value*20;
     }
     
-    if(options === 'vuorokausivuokra 19 h')
+    if(options === '40')
     {
         document.getElementById('total').value = input*40;
+        total.value = input.value*40;
     }
     
-    if(options === 'viikonloppuvuokra pe-su')
+    if(options === '60')
     {
         document.getElementById('total').value = input*60;
+        total.value = input.value*60;
     }
-    total.value = input.value*15;
+    
  
  console.log(total.value);
 
@@ -58,59 +62,39 @@ btnSubtract.addEventListener('click', () =>{
 
     console.log(total.value);
     var options = document.getElementById('option').value;
-    if(options === 'pikavuokraus 2h')
+    var options = document.getElementById('option').value;
+    if(options === '15')
     {
       document.getElementById('total').value = input*15;
+      total.value = input.value*15;
     }
     
-    if(options === '3päivävuokra 18h')
+    if(options === '30')
     {
-        document.getElementById('total').value = input*30;
+        document.getElementById('total').value = input*20;
+        total.value = input.value*20;
     }
     
-    if(options === 'vuorokausivuokra 19 h')
+    if(options === '40')
     {
         document.getElementById('total').value = input*40;
+        total.value = input.value*40;
     }
     
-    if(options === 'viikonloppuvuokra pe-su')
+    if(options === '60')
     {
         document.getElementById('total').value = input*60;
+        total.value = input.value*60;
     }
-    total.value = input.value*15;
+    
 });
 function showMore() {
     document.getElementById("info").innerHTML = "Lisätietoja pyörästä";
 }
 
 
-function calc()
-{
-    var n1 = parseFloat(document.getElementById('input').value);
-    var n2 = parseFloat(document.getElementById('option').value);    
-
-    var options = document.getElementById('option').value;
-    
-    if(options === '15')
-    {
-        n2 = parseFloat(document.getElementById('option').value);
-        document.getElementById('result').value = n1*n2;
-    }
-    
-    if(options === '30')
-    {   n2 = parseFloat(document.getElementById('option').value);
-        document.getElementById('result').value = n1*n2;
-    }
-    
-    if(options === '45')
-    {   n2 = parseFloat(document.getElementById('option').value);
-        document.getElementById('result').value = n1*n2;
-    }
-    
-    if(options === '60')
-    {   n2 = parseFloat(document.getElementById('option').value);
-        document.getElementById('result').value = n1*n2;
-    }
-}
+function refreshPage(){
+    window.location.reload();
+} 
 
  
